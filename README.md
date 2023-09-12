@@ -4,6 +4,6 @@
 ### 系級：科技系二年級
 
 # > 課程筆記區 <
-## 9/12 https://jessica936.github.io/Web/
-# > 作業連結區 <
+# > 作業連結區 <  
+[HW1(9/12)](https://jessica936.github.io/Web/)
 # > 專題連結區 <
