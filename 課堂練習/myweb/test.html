@@ -54,43 +54,31 @@
 	</div>
 
 	<script>
-		const send_button = document.getElementById
-			("send_data");
+		const send_button = document.getElementById('send_data');
 
-
-		function postData(path, params, method) {
-
-			// Create form
-			const hidden_form = document.createElement('form');
-
-			// Set method to post by default
-			hidden_form.method = method || 'post';
-
-			// Set path
-			hidden_form.action = path;
-
-			for (const key in params) {
-				if (params.hasOwnProperty(key)) {
-					const hidden_input = document.createElement
-						('input');
-					hidden_input.type = 'hidden';
-					hidden_input.name = key;
-					hidden_input.value = params[key];
-
-					hidden_form.appendChild(hidden_input);
-				}
-			}
-
-			document.body.appendChild(hidden_form);
-			hidden_form.submit();
+		function postData(path, data) {
+			fetch(path, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
+			})
+				.then(response => {
+					if (response.ok) {
+						console.log('Data sent successfully');
+					} else {
+						console.error('Failed to send data');
+					}
+				})
+				.catch(error => {
+					console.error('Error:', error);
+				});
 		}
 
-
 		send_button.addEventListener('click', () => {
-
-			// Call postData function
-			postData('/posts',
-				{ title: 'foo', body: 'bar', userId: 1 });
+			const dataToSend = { title: 'foo', body: 'bar', userId: 1 };
+			postData('/posts', dataToSend);
 		});
 	</script>
 </body>
