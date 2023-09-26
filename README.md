@@ -5,5 +5,5 @@
 
 # > 課程筆記區 <
 # > 作業連結區 <  
-[HW1(9/12)](https://jessica936.github.io/Jessica936/)
+[HW1建立靜態網頁--個人Blog(9/12)](https://jessica936.github.io/Jessica936/)
 # > 專題連結區 <
