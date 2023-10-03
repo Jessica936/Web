@@ -12,6 +12,10 @@
   * [課堂練習](https://github.com/Jessica936/Web/tree/main/%E8%AA%B2%E5%A0%82%E7%B7%B4%E7%BF%92/myweb)
 * HTTP GET & POST Example Code
   * [JavaScript Post Request Like a Form Submit](https://reurl.cc/XmVnK3)
+### week5: 建立第一個中心化動態網頁 
+* Post & Get
+* API
+* MySQL
 ## 作業連結區🪄
 [HW1建立靜態網頁--個人Blog(9/12)](https://jessica936.github.io/Jessica936/)
 ## 專題連結區🔗
