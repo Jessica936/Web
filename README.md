@@ -16,7 +16,7 @@
 * Post & Get
 * API
 * [MySQL--React--Node.js](https://www.byperth.com/2018/04/19/guide-building-data-science-web-application-with-react-nodejs-and-mysql/)
-  *![The Project Architecture: React & NodeJS & MySQL]
+  ![The Project Architecture: React & NodeJS & MySQL](https://github.com/Jessica936/Web/blob/main/stock-analyzer-project-architecture-1.jpg)
 ## 作業連結區🪄
 [HW1建立靜態網頁--個人Blog(9/12)](https://jessica936.github.io/Jessica936/)
 ## 專題連結區🔗
