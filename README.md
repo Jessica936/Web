@@ -19,4 +19,5 @@
   ![The Project Architecture: React & NodeJS & MySQL](https://github.com/Jessica936/Web/blob/main/stock-analyzer-project-architecture-1.jpg)
 ## 作業連結區🪄
 [HW1建立靜態網頁--個人Blog(9/12)](https://jessica936.github.io/Jessica936/)
+[HW2建立第一個中心化動態網頁 Web](https://youtu.be/VOGeplvHN7c)
 ## 專題連結區🔗
