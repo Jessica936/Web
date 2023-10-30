@@ -1,7 +1,6 @@
 const formEl = document.querySelector(".form");
 const inputEl = document.querySelector(".input");
 const ulEl = document.querySelector(".list");
-
 let list = JSON.parse(localStorage.getItem("list"));
 
 // 提交表單時觸發的事件:
@@ -30,6 +29,9 @@ function toDoList(task) {
   ulEl.appendChild(liEl);
   inputEl.value = "";
 
+  const deadlineInputEl = document.createElement("input");
+  deadlineInputEl.type = "date";
+
   const editBtnEl = document.createElement("div");
   editBtnEl.innerHTML = `<i class="fas fa-edit"></i>`;
   liEl.appendChild(editBtnEl);
@@ -40,16 +42,20 @@ function toDoList(task) {
 
   const trashBtnEl = document.createElement("div");
   trashBtnEl.innerHTML = `<i class="fas fa-trash"></i>`;
-  liEl.appendChild(trashBtnEl);
 
+  liEl.appendChild(spanEl);
+  liEl.appendChild(deadlineInputEl); // 添加截止日期输入框
   liEl.appendChild(editBtnEl);
   liEl.appendChild(checkBtnEl);
   liEl.appendChild(trashBtnEl);
 
+  ulEl.appendChild(liEl);
+  inputEl.value = "";
+
   editBtnEl.addEventListener("click", () => {
-    // 设置内容可编辑
+    // 設置內容可編輯
     spanEl.contentEditable = "true";
-    spanEl.focus(); // 让编辑框获取焦点
+    spanEl.focus(); // 讓編輯框獲取焦點
   });
 
   checkBtnEl.addEventListener("click", () => {
@@ -69,6 +75,11 @@ function toDoList(task) {
     updateLocalStorage();
   });
 
+  deadlineInputEl.addEventListener("input", () => {
+    task.deadline = deadlineInputEl.value;
+    updateLocalStorage();
+  });
+
   updateLocalStorage();
 }
 
@@ -79,6 +90,7 @@ function updateLocalStorage() {
   liEls.forEach((liEl) => {
     list.push({
       name: liEl.innerText,
+      deadline: liEl.querySelector("input[type=date]").value,
       checked: liEl.classList.contains("checked"),
     });
   });
