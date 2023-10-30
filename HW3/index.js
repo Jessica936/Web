@@ -4,11 +4,13 @@ const ulEl = document.querySelector(".list");
 
 let list = JSON.parse(localStorage.getItem("list"));
 
+// 提交表單時觸發的事件:
 formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   toDoList();
 });
 
+// 用於創建新的待辦事項列表項目，並根據傳入的 task 參數初始化它
 function toDoList(task) {
   let newTask = inputEl.value;
   if (task) {
@@ -70,6 +72,7 @@ function toDoList(task) {
   updateLocalStorage();
 }
 
+// 用於創建新的待辦事項列表項目，並根據傳入的 task 參數初始化它
 function updateLocalStorage() {
   const liEls = document.querySelectorAll("li");
   list = [];
@@ -81,7 +84,7 @@ function updateLocalStorage() {
   });
   localStorage.setItem("list", JSON.stringify(list));
 }
-
+// 初始化時加載已有的待辦事項:
 if (list) {
   list.forEach((task) => {
     toDoList(task);
