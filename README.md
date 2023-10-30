@@ -21,4 +21,6 @@
 [HW1建立靜態網頁--個人Blog(9/12)](https://jessica936.github.io/Jessica936/)
 
 [HW2建立第一個中心化動態網頁 Web](https://youtu.be/VOGeplvHN7c)
+
+[HW3創建及修改Javascript小作品](https://youtu.be/fNIa0mrT-nw)
 ## 專題連結區🔗
