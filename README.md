@@ -23,4 +23,6 @@
 [HW2建立第一個中心化動態網頁 Web](https://youtu.be/VOGeplvHN7c)
 
 [HW3創建及修改Javascript小作品](https://youtu.be/fNIa0mrT-nw)
+
+[HW4 Azure 雲端服務佈署](https://youtu.be/IFEM_uVnUcA)
 ## 專題連結區🔗
