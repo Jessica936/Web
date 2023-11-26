@@ -26,3 +26,7 @@
 
 [HW4 Azure 雲端服務佈署](https://youtu.be/IFEM_uVnUcA)
 ## 專題連結區🔗
+### 🏃 Vigor Intergrated Planner 🏃‍♂️(VIP)
+[VIP--First Proposal](https://www.youtube.com/watch?v=NfiVxnlIrEE)
+
+[VIP--Second Proposal ](https://youtu.be/iKLJkONjN4I)
